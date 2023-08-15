@@ -3,6 +3,25 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
+import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
+import {
+  Ecommerce,
+  Orders,
+  Calender,
+  Employees,
+  Stacked,
+  Pyramid,
+  Customers,
+  Kanban,
+  Area,
+  Bar,
+  Pie,
+  Financial,
+  ColorPicker,
+  ColorMapping,
+  Editor,
+} from "./pages";
+
 const App = () => {
   const activeMenu = true;
   return (
@@ -57,14 +76,14 @@ const App = () => {
               <Route path="/color-picker" element="ColorPicker" />
 
               {/* Charts */}
-              <Route path="/line" element="Line" />
-              <Route path="/area" element="Area" />
               <Route path="/bar" element="Bar" />
               <Route path="/pie" element="Pie" />
-              <Route path="/financial" element="Financial" />
-              <Route path="/color-mapping" element="colorMapping" />
+              <Route path="/area" element="Area" />
+              <Route path="/line" element="Line" />
               <Route path="/pyramid" element="Pyramid" />
               <Route path="/stacked" element="stacked" />
+              <Route path="/financial" element="Financial" />
+              <Route path="/color-mapping" element="colorMapping" />
             </Routes>
           </div>
         </div>
